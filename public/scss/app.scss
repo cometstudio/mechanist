@@ -1,0 +1,138 @@
+@import "setup";
+
+body{
+  @extend .font--normal;
+
+  background: $primaryColor;
+  font-family: 'Arimo', sans-serif;
+  color: $textLightColor;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  &.a{
+    &--alert{
+      color: $alertColor;
+    }
+  }
+}
+
+.font{
+  &--bold{
+    @extend b;
+  }
+  &--small{
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  &--normal{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  &--medium{
+    font-size: 19px;
+    line-height: 1.5;
+  }
+}
+
+.grid-container {
+  &--margin-y{
+    margin-bottom: $sectionsYMargin;
+  }
+  &--padding-x{
+    padding-right: $gutter * 1.5;
+    padding-left: $gutter * 1.5;
+  }
+}
+
+.logo{
+  @extend .font--bold;
+
+  &--big {
+    font-size: 30px;
+    line-height: 1em;
+  }
+}
+
+.header-section {
+  background: $successColor;
+  text-align: center;
+  padding: $gutter;
+  &.full {
+    margin-bottom: $sectionsYMargin * 1.5;
+  }
+}
+
+.banner-section{
+  &__content{
+    background: $successColor;
+    &__text{
+      span{
+        display: block;
+        &:first-child{
+          font-size: 50px;
+          line-height: 1.2;
+        }
+        &:last-child{
+          @extend .font--bold;
+          @extend .font--medium;
+        }
+      }
+    }
+  }
+}
+
+.label-section {
+  &__name {
+    @extend .font--bold;
+    @extend .font--medium;
+
+  }
+  &__details {
+    @extend .font--small;
+
+    text-align: right;
+    span{
+      @extend .font--bold;
+    }
+  }
+  @media screen and (max-width: $mediaMediumWidth) {
+    &__details {
+      text-align: left;
+    }
+  }
+}
+
+.thread-section {
+  &__card{
+    background: $secondaryColor;
+    padding: $gutter;
+    margin-bottom: $gutter / 2;
+    &__name{
+      @extend .font--bold;
+      @extend .font--medium;
+    }
+    &__description{
+      @extend .font--small;
+    }
+    &__updated, &__created{
+      @extend .font--small;
+
+      text-align: right;
+    }
+  }
+  @media screen and (max-width: $mediaMediumWidth) {
+    &__card{
+      &__updated, &__created{
+        text-align: left;
+      }
+    }
+  }
+}
+
+.gallery-section {
+  &__card{
+    background: $secondaryColor;
+  }
+}
