@@ -11,23 +11,7 @@
 
     <div class="header-section full grid-container">
         <div class="grid-container">
-            <a href="/" class="logo logo--big">Xxxx</a>
-        </div>
-    </div>
-
-    <div class="banner-section grid-container grid-container--margin-y">
-        <div class="banner-section__content">
-            <div class="grid-x grid-margin-x grid-padding-x grid-padding-y align-bottom">
-                <div class="cell medium-4 medium-offset-2">
-                    <div class="banner-section__content__text">
-                        <span>Line 1</span>
-                        <span>Line 2</span>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <a href="" class="success button">Signup</a> or <a href="" class="success button">Login</a>
-                </div>
-            </div>
+            <a href="/" class="logo logo--big">Механист</a>
         </div>
     </div>
 
@@ -49,7 +33,7 @@
     <div class="thread-section grid-container grid-container--margin-y">
             @for($i=0;$i<3;$i++)
                 <div class="thread-section__card">
-                    <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="grid-x grid-margin-x grid-margin-y medium-margin-collapse">
                         <div class="cell medium-6">
                             <div class="thread-section__card__name">
                                 <a href="" class="a--alert">Thread name</a>
@@ -90,7 +74,22 @@
         <div class="grid-x grid-margin-x grid-margin-y">
             @for($i=0;$i<4;$i++)
                 <div class="cell medium-6 large-3">
-                    <div class="gallery-section__card">1</div>
+                    <div class="gallery-section__card">
+                        <div class="gallery-section__card__image"></div>
+                        <div class="gallery-section__card__info">
+                            <div class="gallery-section__card__info__name">
+                                <a href="" class="a--alert">Модель самолёта ИЛ-86</a>
+                            </div>
+                            <div class="user__card">
+                                <div class="grid-x">
+                                    <div class="cell shrink">
+                                        1
+                                    </div>
+                                    <div class="cell auto">2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             @endfor
         </div>

@@ -27,11 +27,11 @@ a{
     line-height: 1.5;
   }
   &--normal{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.5;
   }
   &--medium{
-    font-size: 19px;
+    font-size: 21px;
     line-height: 1.5;
   }
 }
@@ -61,25 +61,6 @@ a{
   padding: $gutter;
   &.full {
     margin-bottom: $sectionsYMargin * 1.5;
-  }
-}
-
-.banner-section{
-  &__content{
-    background: $successColor;
-    &__text{
-      span{
-        display: block;
-        &:first-child{
-          font-size: 50px;
-          line-height: 1.2;
-        }
-        &:last-child{
-          @extend .font--bold;
-          @extend .font--medium;
-        }
-      }
-    }
   }
 }
 
@@ -114,7 +95,6 @@ a{
       @extend .font--medium;
     }
     &__description{
-      @extend .font--small;
     }
     &__updated, &__created{
       @extend .font--small;
@@ -134,5 +114,11 @@ a{
 .gallery-section {
   &__card{
     background: $secondaryColor;
+    &__image{
+      height: 100px;
+    }
+    &__info{
+      border-top: 1px solid $primaryColor;
+    }
   }
 }
